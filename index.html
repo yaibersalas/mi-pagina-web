@@ -1,71 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futuro IA - Página Combinada</title>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="slider.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <script src="slider (1).js" defer></script>
+  </head>
+  <body>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#tendencias">Tendencias</a></li>
-            <li><a href="#herramientas">Herramientas</a></li>
-            <li><a href="#contador">Contador</a></li>
-            <li><a href="#slider">Galería</a></li>
-        </ul>
-    </nav>
-
-
-    <section id="inicio" class="slider">
-        <img src="img5.jpeg" alt="IA" id="imagen-slider" class="slide">
-        <div class="caption" id="texto-slider">IA: ¿El fin de la creatividad humana?</div>
+    <section class="wrapper">
+      <i class="fa-solid fa-arrow-left button" id="prev"></i>
+      <div class="image-container">
+        <div class="carousel">
+          <img src="img1.jpeg" alt="" />
+          <img src="img4.jpeg" alt="" />
+          <img src="img3.jpeg" alt="" />
+          <img src="img2.jpeg" alt="" />
+        </div>
+        <i class="fa-solid fa-arrow-right button" id="next"></i>
+      </div>
     </section>
-
-
-    <main>
-        <article id="tendencias">
-            <h2>Algoritmos que Crean</h2>
-            <p>Desde generar imágenes con Midjourney hasta componer música, la IA está cambiando cómo los jóvenes de 15 años crean contenido para sus redes sociales.</p>
-        </article>
-
-
-        <article id="herramientas" class="contador-section">
-            <h2>Contador Interactivo</h2>
-            <div class="contador-container">
-                <button id="btnRestar" class="contador-btn">-</button>
-                <span id="contador" class="contador-numero">0</span>
-                <button id="btnSumar" class="contador-btn">+</button>
-            </div>
-            <p class="contador-texto">Valor actual: <span id="valorContador">0</span></p>
-        </article>
-
-
-        <article id="slider" class="slider-galeria">
-            <h2>Galería de Imágenes</h2>
-            <section class="wrapper">
-                <i class="fa-solid fa-arrow-left button" id="prev"></i>
-                <div class="image-container">
-                    <div class="carousel">
-                       <img src="img1.jpeg" alt="" />
-                        <img src="img4.jpeg" alt="" />
-                        <img src="img3.jpeg" alt="" />
-                        <img src="img2.jpeg" alt="" />
-                    </div>
-                </div>
-                <i class="fa-solid fa-arrow-right button" id="next"></i>
-            </section>
-        </article>
-    </main>
-
-
-    <footer>
-        <p>&copy; 2026 - Clase de Telemática - Innovación Digital</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
